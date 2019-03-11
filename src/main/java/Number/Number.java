@@ -47,4 +47,28 @@ public class Number {
         System.out.println(c3);
     }
 
+    @Test
+    public void test02(){
+        a:for(int i = 0;i<10;i++){
+            for (int j=0;j<10;j++){
+                System.out.println("i+j"+i+""+j);
+                if(j >5){
+                    break a;
+                }
+            }
+        }
+    }
+
+    @Test
+    public void test03(){
+        a:for(int i = 0;i<10;i++){
+            for (int j=0;j<10;j++){
+                System.out.println("i+j"+i+""+j);
+                if(j >5){
+                    continue a;
+                }
+            }
+        }
+    }
+
 }
